@@ -1,0 +1,17 @@
+/* Component-level animations and micro-interactions */
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+/* Smooth keyframes for badge pulse */
+@keyframes softPulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-tqv" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1324"/>
+      <stop offset="100%" stop-color="#070c17"/>
+    </linearGradient>
+    <linearGradient id="glow-tqv" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="accent-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15203b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0e1729" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="url(#bg-tqv)"/>
+  <rect width="800" height="450" rx="16" fill="none" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Top Window Bar -->
+  <rect x="0" y="0" width="800" height="42" rx="16" fill="#0c1527"/>
+  <circle cx="28" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="21" r="6" fill="#10b981"/>
+  <text x="400" y="26" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Te Quiero Verde • Sistema de Recomendación BI</text>
+
+  <!-- Left Sidebar Panel -->
+  <rect x="24" y="60" width="220" height="366" rx="12" fill="url(#accent-card)" stroke="#1e293b"/>
+  <text x="44" y="94" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1">ALGORITMO APRIORI</text>
+  <rect x="44" y="110" width="180" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="56" y="131" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">Soporte Min: 0.05</text>
+  <rect x="44" y="152" width="180" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="56" y="173" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="600">Confianza Min: 0.70</text>
+  <rect x="44" y="194" width="180" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="56" y="215" fill="#f59e0b" font-family="sans-serif" font-size="12" font-weight="600">Lift Máx: 2.45x</text>
+
+  <!-- Realtime Association Rules Box -->
+  <rect x="44" y="246" width="180" height="156" rx="8" fill="#0a101d" stroke="#1e293b"/>
+  <text x="56" y="272" fill="#64748b" font-family="monospace" font-size="11"># Transacciones ETL</text>
+  <text x="56" y="296" fill="#a5b4fc" font-family="monospace" font-size="11">A -&gt; B [Conf: 84%]</text>
+  <text x="56" y="320" fill="#a5b4fc" font-family="monospace" font-size="11">C + D -&gt; E [Conf: 79%]</text>
+  <text x="56" y="344" fill="#10b981" font-family="monospace" font-size="11">Rec: Cross-Sell +28%</text>
+  <circle cx="196" cy="380" r="4" fill="#10b981"/>
+  <text x="68" y="384" fill="#94a3b8" font-family="sans-serif" font-size="10">Engine Active</text>
+
+  <!-- Right Main Area / Dashboard Graphs -->
+  <rect x="260" y="60" width="516" height="366" rx="12" fill="url(#accent-card)" stroke="#1e293b"/>
+  <text x="284" y="94" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="700">Analítica de Recomendaciones en Carrito (Power BI &amp; Python)</text>
+  <text x="284" y="114" fill="#64748b" font-family="sans-serif" font-size="12">Minería de datos sobre transacciones históricas en tiempo real</text>
+
+  <!-- Metric Badges -->
+  <rect x="284" y="134" width="150" height="64" rx="8" fill="#0e1729" stroke="#1e293b"/>
+  <text x="300" y="156" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="600">VENTAS ASOCIADAS</text>
+  <text x="300" y="184" fill="#38bdf8" font-family="sans-serif" font-size="20" font-weight="800">+34.8%</text>
+
+  <rect x="446" y="134" width="150" height="64" rx="8" fill="#0e1729" stroke="#1e293b"/>
+  <text x="462" y="156" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="600">TICKET PROMEDIO</text>
+  <text x="462" y="184" fill="#10b981" font-family="sans-serif" font-size="20" font-weight="800">$48.50</text>
+
+  <rect x="608" y="134" width="144" height="64" rx="8" fill="#0e1729" stroke="#1e293b"/>
+  <text x="624" y="156" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="600">CONVERSIÓN REC.</text>
+  <text x="624" y="184" fill="#a855f7" font-family="sans-serif" font-size="20" font-weight="800">76.2%</text>
+
+  <!-- Chart Area -->
+  <rect x="284" y="214" width="468" height="188" rx="8" fill="#0a101d" stroke="#1e293b"/>
+  <line x1="304" y1="360" x2="732" y2="360" stroke="#1e293b" stroke-width="1"/>
+  <line x1="304" y1="310" x2="732" y2="310" stroke="#1e293b" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="304" y1="260" x2="732" y2="260" stroke="#1e293b" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- Path chart with gradient stroke -->
+  <path d="M 314 340 Q 360 320 420 290 T 520 270 T 620 240 T 720 230" fill="none" stroke="url(#glow-tqv)" stroke-width="4"/>
+  <path d="M 314 340 Q 360 320 420 290 T 520 270 T 620 240 T 720 230 L 720 360 L 314 360 Z" fill="url(#glow-tqv)" opacity="0.15"/>
+
+  <!-- Chart Dots -->
+  <circle cx="420" cy="290" r="5" fill="#10b981"/>
+  <circle cx="520" cy="270" r="5" fill="#38bdf8"/>
+  <circle cx="620" cy="240" r="5" fill="#3b82f6"/>
+  <circle cx="720" cy="230" r="6" fill="#60a5fa" stroke="#fff" stroke-width="2"/>
+</svg>

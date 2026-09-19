@@ -1,3 +1,428 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+/* ============================================================
+   DESIGN SYSTEM — KODE.DIY INSPIRA & ALTO CONTRASTE
+   Contenedores modulares, transiciones fluidas de color,
+   bordes de precisión y jerarquía editorial de alto impacto.
+   ============================================================ */
+
+:root {
+  /* TEMA CLARO (Luminoso, limpio, contrastado y estructurado) */
+  --bg-canvas: #f4f6f9;
+  --bg-subtle: #ebf0f5;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f8fafc;
+  --bg-muted: #f1f5f9;
+  --bg-section-alt: #edf2f7;
+  --bg-section-highlight: #f8fafc;
+
+  --border-default: #dbe2ea;
+  --border-subtle: #edf2f7;
+  --border-active: #0f172a;
+  --border-accent: #cbd5e1;
+
+  --text-primary: #090f1d;
+  --text-secondary: #2d3748;
+  --text-muted: #64748b;
+
+  --accent-blue: #1d4ed8;
+  --accent-blue-subtle: #eff6ff;
+  --accent-badge-bg: #f8fafc;
+  --accent-badge-border: #cbd5e1;
+  --accent-badge-text: #0f172a;
+
+  --accent-amber: #d97706;
+  --accent-amber-subtle: #fef3c7;
+
+  --btn-primary-bg: #090f1d;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #1e293b;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-border: #dbe2ea;
+  --btn-secondary-text: #090f1d;
+  --btn-secondary-hover: #f1f5f9;
+
+  --card-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.06), 0 1px 3px -1px rgba(15, 23, 42, 0.04);
+  --card-shadow-hover: 0 16px 32px -8px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+[data-theme='dark'] {
+  /* TEMA OSCURO (Profundo, moderno, acentos de neón sutiles) */
+  --bg-canvas: #070a12;
+  --bg-subtle: #0d1322;
+  --bg-surface: #101828;
+  --bg-surface-hover: #162238;
+  --bg-muted: #172236;
+  --bg-section-alt: #0c121e;
+  --bg-section-highlight: #141e33;
+
+  --border-default: #1e2c44;
+  --border-subtle: #141d2d;
+  --border-active: #60a5fa;
+  --border-accent: #293b5c;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --accent-blue: #38bdf8;
+  --accent-blue-subtle: rgba(56, 189, 248, 0.12);
+  --accent-badge-bg: #141e33;
+  --accent-badge-border: #1e2c44;
+  --accent-badge-text: #93c5fd;
+
+  --accent-amber: #fbbf24;
+  --accent-amber-subtle: rgba(251, 191, 36, 0.12);
+
+  --btn-primary-bg: #2563eb;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #1d4ed8;
+
+  --btn-secondary-bg: #101828;
+  --btn-secondary-border: #1e2c44;
+  --btn-secondary-text: #f8fafc;
+  --btn-secondary-hover: #162238;
+
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 20px 35px -8px rgba(0, 0, 0, 0.65);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   ESTRUCTURA MODULAR ESTILO KODE.DIY
+   Bloques seccionales independientes con bordes definidos,
+   fondos alternantes y transiciones visuales armónicas.
+   ============================================================ */
+
+.section-module {
+  position: relative;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 1.75rem;
+  padding: 2.25rem 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .section-module {
+    border-radius: 2.25rem;
+    padding: 3rem 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-module {
+    border-radius: 2.5rem;
+    padding: 3.75rem 3.25rem;
+  }
+}
+
+/* Variación de fondo contrastante entre secciones */
+.section-module-alt {
+  background-color: var(--bg-section-alt);
+}
+
+.section-module-highlight {
+  background-color: var(--bg-surface);
+  border-color: var(--border-accent);
+}
+
+/* Indicador de sección técnico monospaciado */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+  background-color: var(--accent-blue-subtle);
+  border: 1px solid color-mix(in srgb, var(--accent-blue) 30%, transparent);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+/* Conectores sutiles de transición entre secciones */
+.section-connector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1rem 0;
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.section-connector-line {
+  width: 2px;
+  height: 2.25rem;
+  background: linear-gradient(180deg, var(--border-default) 0%, var(--accent-blue) 50%, var(--border-default) 100%);
+  border-radius: 9999px;
+  opacity: 0.7;
+}
+
+/* Barra de navegación */
+.navbar-clean {
+  background-color: color-mix(in srgb, var(--bg-canvas) 85%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-default);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Tarjetas */
+.clean-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clean-card:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Botones con carácter */
+.clean-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-text);
+  font-size: 0.825rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.clean-btn:hover {
+  background-color: var(--btn-secondary-hover);
+  border-color: var(--border-active);
+  transform: translateY(-1px);
+}
+
+.clean-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  font-size: 0.825rem;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.clean-btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Chips de tecnología */
+.badge-tech {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--accent-badge-bg);
+  border: 1px solid var(--accent-badge-border);
+  color: var(--accent-badge-text);
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.badge-tech:hover {
+  border-color: var(--border-active);
+}
+
+/* Tarjeta de Certificado Oficial */
+.cert-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 1.15rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.cert-preview-box {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-color: var(--bg-muted);
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-subtle);
+  cursor: pointer;
+}
+
+.cert-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.35s ease;
+}
+
+.cert-card:hover .cert-preview-box img {
+  transform: scale(1.04);
+}
+
+/* Tarjeta individual de Skill */
+.skill-card-modern {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 10px;
+  padding: 16px 10px;
+  min-height: 98px;
+  gap: 10px;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.skill-card-modern:hover {
+  border-color: var(--border-active);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Modal Lightbox de Certificado */
+.modal-backdrop-blur {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Contenedor Adaptativo Estable para visualización de proyectos */
+.project-image-showcase {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  background-color: var(--bg-canvas);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem;
+  box-shadow: var(--card-shadow);
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .project-image-showcase {
+    height: 360px;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-image-showcase {
+    height: 390px;
+  }
+}
+
+/* Fondo sutil y limpio sin halos difusos gigantes */
+.project-ambient-glow {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-canvas);
+  background-image: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+[data-theme='dark'] .project-ambient-glow {
+  background-image: radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.06) 0%, transparent 70%);
+}
+
+.project-img-fitted {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-image-showcase:hover .project-img-fitted {
+  transform: scale(1.015);
+}
