@@ -339,7 +339,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     links: [
       {
         type: 'instagram',
-        url: 'https://www.instagram.com/p/DPkJm35kiVJ/?img_index=5',
+        url: 'https://www.instagram.com/p/DPkJm35kiVJ/?img_index=1',
         label: 'Publicación Oficial en Instagram'
       },
       {
