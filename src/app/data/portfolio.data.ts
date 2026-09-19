@@ -89,8 +89,8 @@ export const PROFILE_DATA = {
   phone: '0987368078',
   phoneFormatted: '+593 98 736 8078',
   bio: 'Estudiante de Ingeniería de Software (8vo semestre) en la Escuela Politécnica Nacional (EPN) con experiencia práctica en desarrollo Full Stack, integraciones de API REST, pasarelas de pago y entornos ágiles. Ganador del 1er Lugar en la Hackatón BAQ ($7,000), 3er Lugar en Conecta Impacto 2025 (Corporación Favorita & Openlab) y 3er Lugar en LigaGP+ de PMI LATAM. Destacado interés en arquitectura backend, microservicios, liderazgo institucional y desarrollo asistido por IA.',
-  cvSpanish: 'CV_ES.pdf',
-  cvEnglish: 'CV_EN.pdf',
+  cvSpanish: 'Julián_Narváez_CV_ES.pdf',
+  cvEnglish: 'Julián_Narváez_CV_EN.pdf',
   socials: [
     {
       name: 'LinkedIn',
