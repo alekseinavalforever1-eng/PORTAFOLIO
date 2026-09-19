@@ -98,13 +98,7 @@ export const PROFILE_DATA = {
       icon: 'linkedin',
       label: 'LinkedIn'
     },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/JSGGY',
-      icon: 'github',
-      label: 'GitHub'
-    },
-    {
+        {
       name: 'Email',
       url: 'mailto:alekseinavalforever@gmail.com',
       icon: 'email',
@@ -191,15 +185,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'projects/the-reel-cafe-3.png'
     ],
     category: 'Full Stack & Backend Architecture',
-    githubUrl: 'https://github.com/JSGGY',
     technologies: ['Java 17', 'JPA', 'Jersey (JAX-RS)', 'MySQL', 'Patrón Factory', 'HTML5', 'CSS3', 'REST APIs'],
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Código en GitHub'
-      }
-    ]
+    links: []
   },
   {
     id: 'banco-alimentos-sync',
@@ -208,7 +195,6 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'Infraestructura transaccional para donaciones en línea con validación de webhooks, verificación de firmas criptográficas y sincronización bidireccional automática con sistemas CRM corporativos.',
     image: 'projects/baq-un-clic.png',
     category: 'Full Stack & FinTech',
-    githubUrl: 'https://github.com/JSGGY',
     technologies: ['TypeScript', 'JavaScript', 'REST APIs', 'Webhooks', 'CRM Sync', 'Postman', 'Git'],
     links: [
       {
@@ -216,12 +202,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
         url: 'https://baq.ec',
         label: 'baq.ec (Web)'
       },
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Código en GitHub'
-      }
-    ]
+          ]
   },
   {
     id: 'te-quiero-verde',
@@ -230,15 +211,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'Sistema inteligente de recomendación para carritos de compras. Analiza selecciones en tiempo real y sugiere productos mediante reglas de asociación del algoritmo Apriori a partir de transacciones históricas.',
     image: 'projects/te-quiero-verde.png',
     category: 'Business Intelligence & AI',
-    githubUrl: 'https://github.com/JSGGY',
     technologies: ['Python', 'Algoritmo Apriori', 'ETL', 'Power BI', 'WordPress'],
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Código en GitHub'
-      }
-    ]
+    links: []
   },
   {
     id: 'deuna-yapass',
@@ -251,15 +225,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'projects/deuna-yapass.jpg'
     ],
     category: 'Mobile & FinTech Innovation',
-    githubUrl: 'https://github.com/JSGGY',
     technologies: ['Figma', 'Mobile UI', 'FinTech', 'Gamification', 'Product Design'],
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Código en GitHub'
-      }
-    ]
+    links: []
   },
   {
     id: 'morales-cocoa',
@@ -296,9 +263,9 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     issuer: 'Banco de Alimentos Quito • Moderna Alimentos • Openlab',
     award: '$7,000 en Financiamiento & Desarrollo',
     dateOrStatus: 'Mayo 2025 • Quito, Ecuador',
-    badgeText: '🥇 1er Lugar Ganador',
+    badgeText: '🥇 1er Lugar Podio',
     description:
-      'Equipo ganador DonaFácil con la propuesta "BAQ: Un clic para alimentar". Plataforma web que optimiza el flujo de donaciones monetarias y alimenticias, integrando pasarelas de pago y mitigando drásticamente el abandono del donante.',
+      '1er Lugar con la propuesta "BAQ: Un clic para alimentar", optimizando donaciones con pasarelas de pago y mitigando el abandono del donante.',
     technologies: ['Node.js', 'TypeScript', 'REST APIs', 'Pasarelas de Pago', 'CRM Sync', 'Scrum'],
     image: 'achievements/hackathon-baq.jpg',
     links: [
@@ -327,13 +294,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     dateOrStatus: '2025 • Quito, Ecuador',
     badgeText: '🥉 3er Lugar Podio',
     description:
-      'Con el equipo DonaYa desarrollamos una plataforma para digitalizar y transparentar donaciones, contribuyendo a que el Banco de Alimentos de Quito pueda llegar más rápido y de manera más efectiva a quienes lo necesitan. Nuestro equipo obtuvo el tercer lugar (al ser DonaYa un proyecto ya en funcionamiento como empresa frente a startups iniciales). Un verdadero logro de impacto social tangible aplicando ingeniería de software moderna.',
-    storyDetails: [
-      'Frontend ágil y responsivo desarrollado en Angular.',
-      'Backend modular y de alta mantenibilidad construido en NestJS.',
-      'Persistencia de datos transaccionales con PostgreSQL.',
-      'Contenedores Docker para consistencia de entornos y CI/CD en Vercel.'
-    ],
+      '3er Lugar en hackatón corporativo con el equipo DonaYa, digitalizando y transparentando donaciones para el Banco de Alimentos de Quito (BAQ).',
     technologies: ['Angular', 'NestJS', 'PostgreSQL', 'Docker', 'Vercel'],
     image: 'achievements/conecta-impacto.jpg',
     links: [
@@ -342,12 +303,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
         url: 'https://www.instagram.com/p/DPkJm35kiVJ/?img_index=1',
         label: 'Publicación Oficial en Instagram'
       },
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Repositorio del Proyecto'
-      }
-    ]
+          ]
   },
   {
     id: 'ligagp-pmi',
@@ -357,7 +313,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
     dateOrStatus: 'Abril – Mayo 2026',
     badgeText: '🥉 3er Lugar Regional',
     description:
-      'Galardonado con el Tercer Lugar en LigaGP+, competencia internacional regional organizada por el PMI LATAM y respaldada con reconocimiento oficial del Vicerrectorado de Docencia de la EPN, resolviendo retos estratégicos con metodologías PMI.',
+      '3er Lugar en competencia regional del PMI LATAM, con respaldo del Vicerrectorado de Docencia de la EPN aplicando metodologías PMI.',
     technologies: ['Project Management', 'PMI Standards', 'Toma de Decisiones', 'Estrategia', 'Trabajo en Equipo'],
     image: 'achievements/ligagp-ganadores.jpg',
     links: [
@@ -389,13 +345,7 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
       'Diseño y desarrollo del prototipo YaPass, una propuesta móvil de fidelización gamificada para dinamizar compras en comercios locales y pagos digitales mediante recompensas y desafíos interactivos.',
     technologies: ['Figma', 'Mobile UI', 'FinTech', 'Gamification'],
     image: 'achievements/hackathon-deuna-equipo.jpg',
-    links: [
-      {
-        type: 'github',
-        url: 'https://github.com/JSGGY',
-        label: 'Repositorio del Proyecto'
-      }
-    ]
+    links: []
   }
 ];
 
@@ -523,32 +473,28 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
   {
     id: 'cert-ingles-b2',
     title: 'Inglés Nivel B2 (Competencia Profesional – Certificado)',
-    issuer: 'Certificación de Suficiencia Internacional',
+    issuer: 'Centro de Educación Continua • Escuela Politécnica Nacional (CEC-EPN)',
     type: 'Acreditación Lingüística',
     dateOrStatus: 'Vigente • Bilingüe',
     badgeText: '🇬🇧 B2 Profesional',
     description:
-      'Competencia lingüística acreditada para comunicación técnica, trabajo fluido en equipos multiculturales y elaboración de documentación en inglés.',
+      'Certificado de suficiencia en inglés (Advanced Two; Level Seven) emitido por el CEC-EPN.',
+    pdfUrl: 'certifications/ingles-b2.pdf',
+    previewImage: 'certifications/ingles-b2-preview.jpg',
     verifyUrl: 'https://drive.google.com/file/d/1YYH7Dm7-Xpj5BNIYOyQ4W3P22V-ufxG9/view',
     category: 'Idioma',
     links: [
       {
+        type: 'pdf',
+        url: 'certifications/ingles-b2.pdf',
+        label: 'Ver Certificado (PDF)'
+      },
+      {
         type: 'drive',
         url: 'https://drive.google.com/file/d/1YYH7Dm7-Xpj5BNIYOyQ4W3P22V-ufxG9/view',
-        label: 'Ver Certificado Oficial (Google Drive)'
+        label: 'Verificar en Drive'
       }
     ]
-  },
-  {
-    id: 'cert-ai-mcp',
-    title: 'Desarrollo Asistido por IA & Configuración MCP',
-    issuer: 'Especialización Práctica en AI Engineering',
-    type: 'Especialidad Técnica',
-    dateOrStatus: 'Especialidad Técnica',
-    badgeText: '🤖 IA & MCP Tools',
-    description:
-      'Aplicación de buenas prácticas de ingeniería de software aumentada por IA, setup y creación de servidores MCP (Model Context Protocol) y optimización del ciclo de desarrollo Full Stack.',
-    category: 'Académico'
   }
 ];
 
