@@ -268,7 +268,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'Proyecto de la materia de Interacción Humano-Computador (HCI) enfocado rigurosamente en el usuario. Prototipo interactivo de alta fidelidad para el catálogo de productos, experiencia sensorial de cata y flujo de compra de cacao fino de aroma ecuatoriano.',
     image: 'projects/morales-cocoa.jpg',
     category: 'UI/UX & Frontend Architecture',
-    technologies: ['Figma', 'UI/UX Design', 'Design Systems', 'HCI Frameworks', 'Prototyping'],
+    technologies: ['Figma', 'UI/UX Design', 'Design Systems', 'WordPress', 'Prototyping'],
     links: [
       {
         type: 'figma',
@@ -380,13 +380,13 @@ export const ACHIEVEMENTS_DATA: AchievementItem[] = [
   },
   {
     id: 'hackathon-conecta',
-    title: '3er Lugar – Hackathon Conecta Impacto / DeUna',
-    issuer: 'Conecta Impacto • DeUna (Interact2Hack)',
-    award: 'Podio de Innovación & FinTech',
+    title: 'Participación Destacada – Hackathon Interact2Hack (Desafío DeUna)',
+    issuer: 'DeUna • Banco Pichincha (Interact2Hack)',
+    award: 'Participación Destacada',
     dateOrStatus: '2024',
-    badgeText: '🥉 3er Lugar Podio',
+    badgeText: '⭐ Participación Destacada',
     description:
-      'Diseño y desarrollo del prototipo YaPass, una propuesta móvil orientada a dinamizar el comercio local mediante retos gamificados, recompensas y captación de fondos para causas benéficas.',
+      'Diseño y desarrollo del prototipo YaPass, una propuesta móvil de fidelización gamificada para dinamizar compras en comercios locales y pagos digitales mediante recompensas y desafíos interactivos.',
     technologies: ['Figma', 'Mobile UI', 'FinTech', 'Gamification'],
     image: 'achievements/hackathon-deuna-equipo.jpg',
     links: [
