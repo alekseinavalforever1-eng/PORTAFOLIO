@@ -29,8 +29,8 @@ export class App {
   readonly certificates = CERTIFICATES_DATA;
   readonly allSkills = SKILLS_DATA;
 
-  // Modo de color (false = Claro por defecto, true = Oscuro)
-  readonly isDarkMode = signal<boolean>(false);
+  // Modo de color (true = Oscuro por defecto, false = Claro)
+  readonly isDarkMode = signal<boolean>(true);
 
   // Índice del slider de proyectos (uno por uno con flechas)
   readonly currentProjectIndex = signal<number>(0);
@@ -78,15 +78,15 @@ export class App {
   });
 
   constructor() {
-    // Inicializar tema
+    // Inicializar tema (Oscuro por defecto)
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        this.isDarkMode.set(true);
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
+      if (savedTheme === 'light') {
         this.isDarkMode.set(false);
         document.documentElement.removeAttribute('data-theme');
+      } else {
+        this.isDarkMode.set(true);
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
     }
   }
