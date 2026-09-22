@@ -20,6 +20,7 @@ export interface ExperienceItem {
   description: string;
   highlights: string[];
   technologies: string[];
+  image?: string;
   links?: ItemLink[];
 }
 
@@ -129,6 +130,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Trabajo en equipo bajo marco ágil Scrum y control de versiones colaborativo con Git.'
     ],
     technologies: ['TypeScript', 'JavaScript', 'REST APIs', 'Webhooks', 'CRM Sync', 'Full Stack', 'Git', 'Scrum'],
+    image: 'achievements/hackathon-baq.jpg',
     links: [
       {
         type: 'web',
@@ -152,6 +154,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       'Coordinación directa de actividades conjuntas entre directivas estudiantiles, decanato y aliados tecnológicos del sector.'
     ],
     technologies: ['Liderazgo', 'Comunicación Institucional', 'Estrategia Digital', 'Gestión de Redes', 'Trabajo en Equipo'],
+    image: 'certifications/aeis-preview.jpg',
     links: [
       {
         type: 'pdf',
@@ -239,7 +242,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     links: [
       {
         type: 'figma',
-        url: 'https://www.figma.com/proto/nB5i5t3k9Gj9sU5F5d4R7l/Morales-Cocoa',
+        url: 'https://www.figma.com/proto/BXdHhhuEY3LA6LnrXJZFuW/Projecto-HCI--Copy-?node-id=244-1845&hide-ui=1&scaling=scale-down-width&starting-point-node-id=244%3A1845',
         label: 'Prototipo Interactivo en Figma'
       }
     ]
